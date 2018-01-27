@@ -1,16 +1,42 @@
+
+
+.navbar {
+    opacity: 0;
+}
+
+#logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin-top: 3%;
+}
+
+.social img {
+    height: 40px;
+}
+
 #photo, #tech {
     height: 200px;
 }
 
-.row {
+section {
     background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
-    height: 90vh;
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+#section1 {
+    background-image: url("../pics/bc.jpeg");
+}
+
+#section2 {
+    background-color: black;
+}
+
+#section3 {
+    background-image: url("../pics/bc2.jpeg");
 }
