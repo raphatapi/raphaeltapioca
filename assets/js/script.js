@@ -22,7 +22,9 @@ $(document).ready(function(){
       } // End if
     });
 
+    //Add navbar on scroll
     $(document).on('scroll', function (e) {
         $('.navbar').css('opacity', ($(document).scrollTop() / 500));
     });
+
   });
