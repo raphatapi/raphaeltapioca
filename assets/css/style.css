@@ -15,6 +15,25 @@
     height: 40px;
 }
 
+#header h1 {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 70px;
+    font-weight: bolder;
+    float: right;
+}
+
+#picWrap {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    align-content: stretch;
+    margin-top: 2%;
+}
+
 #tech {
     height: 200px;
 }
@@ -39,10 +58,11 @@ section {
 .btnWrap {
     display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: flex-end;
-	align-content: center;
+    align-content: flex-end;
+    padding-top: .16%;
 }
 
 #link {
