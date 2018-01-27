@@ -2,6 +2,7 @@
 
 .navbar {
     opacity: 0;
+    background: rgba(0, 0, 0, 0.85);
 }
 
 #logo {
@@ -41,7 +42,7 @@
 #photo {
     margin-top: 5%;
     height: 300px;
-    width: 310px;
+    width: 325px;
     border-radius: 50%;
 }
 
@@ -81,7 +82,16 @@ section {
 }
 
 #section2 {
+    background-image: url("../pics/upkeep.png");
     background-color: black;
+}
+
+#upkeep h1 {
+    font-family: 'Playfair Display', serif;
+    color: #333333;
+    font-weight: bolder;
+    font-size: 60px;
+    margin-top: 10%;
 }
 
 #section3 {
