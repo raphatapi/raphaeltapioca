@@ -1,0 +1,16 @@
+#photo, #tech {
+    height: 200px;
+}
+
+.row {
+    background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+    height: 90vh;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
