@@ -86,7 +86,7 @@ section {
     text-decoration: none;
     text-align: center;
     background-color: whitesmoke;
-    color: #333333;
+    color: #fe7000;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     border: 3px solid rgba(0, 0, 0, .6);
     -webkit-background-clip: padding-box; /* for Safari */
@@ -94,7 +94,7 @@ section {
 }
 
 .button1:hover {
-    background-color: #555555;
+    background-color: #fe7000;
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     text-decoration: none;
@@ -224,7 +224,7 @@ section {
 }
 
 #uni {
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 #purple {
@@ -292,5 +292,32 @@ section {
 
 .tech3 img {
     height: 55px;
-    margin: 13% 1% 7% 0;
+    margin: 13% 1% 0 0;
+}
+
+.button4 {
+    font-family: 'Schoolbell', cursive;
+    color: #8080ff;
+    text-shadow: 2px 2px #ff66ff;
+    font-weight: bold;
+    font-size: 30px;
+    width: 20%;
+    padding-bottom: .4%;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    border: 3px solid rgba(0, 0, 0, .7);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.button4:hover {
+    background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    color: #ffffff;
+    text-shadow: 2px 2px #ff66ff;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    text-decoration: none;
+    border: 3px solid rgba(0, 0, 0, .3);
 }
