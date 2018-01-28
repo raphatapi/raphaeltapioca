@@ -20,7 +20,7 @@
     color: white;
     font-family: 'Playfair Display', serif;
     text-align: center;
-    font-size: 70px;
+    font-size: 65px;
     font-weight: bolder;
     float: right;
 }
@@ -35,7 +35,7 @@
     margin-top: 2%;
 }
 
-#tech {
+#test {
     height: 200px;
 }
 
@@ -51,7 +51,7 @@ section {
 	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
-    height: 94vh;
+    height: 100vh;
     width: 100%;
     margin: 0;
 }
@@ -78,22 +78,146 @@ section {
 }
 
 #section1 {
-    background-image: url("../pics/bc.jpeg");
+    background-image: url("../pics/bc/bc.jpeg");
+}
+
+.next {
+    padding-top: 2%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-end;
+    align-content: flex-end;
+}
+
+.button1 {
+    font-size: 30px;
+    width: 20%;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+
+.button1:hover {
+    background-color: #555555;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    text-decoration: none;
 }
 
 #section2 {
-    background-image: url("../pics/upkeep.png");
+    background-image: url("../pics/bc/upkeep.png");
     background-color: black;
 }
 
-#upkeep h1 {
-    font-family: 'Playfair Display', serif;
+#upkeep {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: flex-end;
+}
+
+#upkeep h1{
+    float: right;
+    font-family: 'Allerta Stencil', sans-serif;
     color: #333333;
     font-weight: bolder;
     font-size: 60px;
-    margin-top: 10%;
+    margin-top: 50%;
+}
+
+#upkeep h3 {
+    float: right;
+    font-family: 'Allerta Stencil', sans-serif;
+    color: #333333;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 6%;
+}
+
+.tech2 img {
+    height: 55px;
+    margin: 15% 0 5% 0;
 }
 
 #section3 {
-    background-image: url("../pics/bc2.jpeg");
+    background-image: url("../pics/bc/purpletree.png");
+}
+
+#uni {
+    padding-top: 10%;
+}
+
+#purple {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: flex-start;
+}
+
+#tree img {
+    height: 60px;
+    margin-right: 2%;
+}
+
+#purple h1 {
+    float: left;
+    font-family: 'Schoolbell', cursive;
+    color: #8080ff;
+    text-shadow: 2px 2px #ff66ff;
+    font-weight: bolder;
+    font-size: 60px;
+    margin-top: 20%;
+    width: 100%;
+}
+
+#purple a {
+    width: 100%;
+}
+
+#purple h3 {
+    float: left;
+    font-family: 'Schoolbell', cursive;
+    color: #8080ff;
+    text-shadow: 2px 2px #ff66ff;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 6%;
+}
+
+#award {
+    width: 100%;
+    margin-top: 2%;
+}
+
+#award img {
+    float: left;
+    height: 50px;
+}
+
+#award h4 {
+    float: left;
+    font-family: 'Schoolbell', cursive;
+    color: #8080ff;
+    text-shadow: 2px 2px #ff66ff;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 3%;
+}
+
+.tech3 {
+    width: 100%;
+}
+
+.tech3 img {
+    height: 55px;
+    margin: 13% 1% 7% 0;
 }
