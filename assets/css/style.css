@@ -117,19 +117,20 @@ section {
 }
 
 #sketch {
-    margin-top: 12.5%;
+    margin-top: 17.5%;
 }
 
 #sketch img {
     width: 100%;
-    height: 200px;
+    height: 250px;
 
 }
 
 #sub-sketch img {
     float: right;
     width: 40%;
-    margin: 2% 0 0 5%;
+    height: 150px;
+    margin: 1% 0 0 10%;
 }
 
 .button2 {
