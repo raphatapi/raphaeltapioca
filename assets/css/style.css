@@ -1,7 +1,5 @@
-.navbar.navbar-inverse.navbar-header.navbar-fixed-top {
+.navbar {
     opacity: 0;
-    background-image: url("../pics/mern.jpg");
-    /* background-image: url("../pics/bc/bc.jpeg"); */
     background: rgba(0, 0, 0, 0.85);
 }
 
