@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .navbar {
     opacity: 0;
     background: rgba(0, 0, 0, 0.85);
@@ -20,7 +24,6 @@
     text-align: center;
     font-size: 65px;
     font-weight: bolder;
-    float: right;
 }
 
 #picWrap {
@@ -36,7 +39,7 @@
 #photo {
     margin-top: 5%;
     height: 300px;
-    width: 325px;
+    width: 280px;
     border-radius: 50%;
 }
 
@@ -48,16 +51,6 @@ section {
     height: 100vh;
     width: 100%;
     margin: 0;
-}
-
-.btnWrap {
-    display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: flex-end;
-    align-content: flex-end;
-    padding-top: .16%;
 }
 
 #section1 {
@@ -319,4 +312,70 @@ section {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     text-decoration: none;
     border: 3px solid rgba(0, 0, 0, .3);
+}
+
+/* PICTURE GALLERY */
+#section5 {
+    background-image: url("../pics/bc/draw.jpg");
+}
+
+.gallery {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.pics {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.tile {
+    position: relative; 
+    margin: 0 auto; /* Center it */
+}
+
+.tile .content {
+    position: absolute; /* Position the background text */
+    bottom: 10%; /* At the bottom. Use top:0 to append it to the top */
+    background: rgba(236, 18, 18, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 10px; /* Some padding */
+}
+
+.tile .content h3 {
+    margin-top: 0;
+}
+
+.tile .content p {
+    margin-bottom: 0;
+}
+
+.pics img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two pics-layout instead of four picss */
+@media (max-width: 800px) {
+    .pics {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two picss stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .pics {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
 }
