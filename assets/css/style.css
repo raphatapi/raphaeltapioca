@@ -331,18 +331,19 @@ h2 {
 .projContainer {
     display: inline-block;
     text-align: center;
-    margin-top: 1.5%;
+    margin: 2.5% 0;
     overflow: hidden;
     position: relative;
     vertical-align: top;
     width: 330px;
-    height: 218px;
+    height: 228px;
     cursor: pointer;
 }
   
 .projContainer img {
     /* vertical-align: center; */
     transition: 0.4s;
+    margin-top: 0px;
 }
 
 .projContainer:hover img {
@@ -381,11 +382,13 @@ h2 {
 }
 
 .gallery {
-    display: -ms-flexbox; /* IE10 */
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    margin: 8% -60px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: left;
+	align-items: center;
+	align-content: stretch;
+    margin: 8% -70px;
 }
 
 /* Create four equal columns that sits next to each other */
@@ -394,7 +397,7 @@ h2 {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
-    margin: 0 .8%;
+    margin: 0 1%;
 }
 
 
