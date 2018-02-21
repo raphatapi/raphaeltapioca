@@ -170,7 +170,7 @@ section {
     text-shadow: 3px 3px 8px #555;
     font-weight: bolder;
     font-size: 60px;
-    margin-top: 50%;
+    margin-top: 35%;
 }
 
 #upkeep h3 {
@@ -183,9 +183,29 @@ section {
     margin-top: 6%;
 }
 
+#award-useful {
+    width: 100%;
+    margin-top: 2%;
+}
+
+#award-useful img {
+    float: right;
+    height: 50px;
+}
+
+#award-useful h4 {
+    float: right;
+    font-family: 'Allerta Stencil', sans-serif;
+    color: #333333;
+    text-shadow: 3px 3px 8px #555;
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 3%;
+}
+
 .tech2 img {
     height: 55px;
-    margin: 17% 0 7% 0;
+    margin: 12% 0 7% 0;
 }
 
 .button3 {
@@ -305,6 +325,10 @@ section {
     background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 }
 
+.button4:hover, .button4:active, .button4:visited, .button4:focus {
+    text-decoration: none;
+}
+
 .button4:hover {
     background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
     color: #ffffff;
@@ -316,8 +340,18 @@ section {
 
 
 /* PICTURE GALLERY */
+
 #section5 {
-    background-image: url("../pics/bc/draw.jpg");
+    background-image: url("../pics/bc/wood.jpg");
+    height: 130vh;
+}
+
+#bee {
+    text-align: center;
+    margin-top: 8%;
+    font-family: 'Allerta Stencil', sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
 }
 
 h2 {
@@ -331,12 +365,12 @@ h2 {
 .projContainer {
     display: inline-block;
     text-align: center;
-    margin: 2.5% 0;
+    margin: 1.5% 0;
     overflow: hidden;
     position: relative;
     vertical-align: top;
-    width: 330px;
-    height: 228px;
+    width: 290px;
+    height: 204px;
     cursor: pointer;
 }
   
@@ -385,51 +419,27 @@ h2 {
     display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: left;
+	justify-content: center;
 	align-items: center;
-	align-content: stretch;
-    margin: 8% -70px;
+	align-content: center;
+    margin: 2% -60px;
 }
 
 /* Create four equal columns that sits next to each other */
 .pics {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-    max-width: 25%;
     padding: 0 4px;
-    margin: 0 1%;
-}
-
-
-
-
-
-
-.tile {
-    position: relative; 
-    margin: 0 auto; /* Center it */
-}
-
-.tile .content {
-    position: absolute; /* Position the background text */
-    bottom: 10%; /* At the bottom. Use top:0 to append it to the top */
-    background: rgba(236, 18, 18, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1; /* Grey text */
-    width: 100%; /* Full width */
-    padding: 10px; /* Some padding */
-}
-
-.tile .content h3 {
-    margin-top: 0;
-}
-
-.tile .content p {
-    margin-bottom: 0;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
 }
 
 .pics img {
     margin-top: 8px;
     vertical-align: middle;
+    /* opacity: .9; */
 }
 
 /* Responsive layout - makes a two pics-layout instead of four picss */
