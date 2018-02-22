@@ -1,5 +1,4 @@
 
-
 $(document).ready(function(){
     // Add smooth scrolling to all links
     $("a").on('click', function(event) {
@@ -34,5 +33,18 @@ $(document).ready(function(){
         $('.navbar').css('opacity', ($(document).scrollTop() / 500));
     });
 
+    $('[data-toggle="popover"]', '#upkeep').popover({
+      html: true,
+      trigger: 'hover',
+      placement: 'left',
+      content: function(){return '<img src="'+$(this).data('img') + '" height="250" width="550" />';}
+    });
+
+    $('[data-toggle="popover"]', '#purple').popover({
+      html: true,
+      trigger: 'hover',
+      placement: 'right',
+      content: function(){return '<img src="'+$(this).data('img') + '" height="250" width="550" />';}
+    });
 });
 
