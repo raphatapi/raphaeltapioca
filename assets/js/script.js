@@ -72,7 +72,7 @@ $(document).ready(function(){
       } // End if
     });
 
-    $('#logo').click(function(){
+    $('#logo').on('click', function(){
       $('html, body').animate({scrollTop : 0},600);
       return false;
     });

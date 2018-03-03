@@ -2,6 +2,35 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
+.container-full {
+    min-height: 100%;
+    overflow:auto;
+    padding-bottom:100px;
+}
+
+.footer {
+    position: relative;
+    margin-top: -100px; /* negative value of footer height */
+    height: 100px;
+    clear:both;
+    padding-top:20px;
+    text-align: center;
+    transition: background .2s ease-in;
+}
+
+.footer:hover {
+    background-color: rgb(219, 219, 219);
+}
+
+.footer h1 {
+    font-size: medium;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
 .popover {
     max-width: 100%;
 }
@@ -43,15 +72,28 @@ html,body {height: 100%;margin: 0;padding: 0;background:greenyellow}
     margin-top: 3%;
 }
 
+#logo:hover {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
 .social img {
     height: 40px;
+}
+
+#github:hover, #linkedin:hover, #pdf:hover {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
 }
 
 #header h1 {
     color: white;
     font-family: 'Playfair Display', serif;
     text-align: center;
-    font-size: 65px;
+    font-size: 10vh;
     font-weight: bolder;
 }
 
@@ -67,9 +109,11 @@ html,body {height: 100%;margin: 0;padding: 0;background:greenyellow}
 
 #photo {
     margin-top: 5%;
-    height: 300px;
-    width: 300px;
+    height: 50vh;
+    width: 50vh;
     border-radius: 50%;
+    animation-delay: 1s;
+    animation-duration: 2s;
 }
 
 section {
@@ -198,9 +242,18 @@ section {
     font-family: 'Allerta Stencil', sans-serif;
     color: #333333;
     text-shadow: 3px 3px 8px #555;
+    transition: text-shadow 0.2s ease-in-out;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
     font-weight: bolder;
     font-size: 60px;
     margin-top: 10px;
+}
+
+#upkeep h1:hover {
+    text-shadow: 3px 9px 16px #777;
+    animation-iteration-count: 0;
 }
 
 #upkeep h3 {
@@ -289,10 +342,19 @@ section {
     font-family: 'Schoolbell', cursive;
     color: #8080ff;
     text-shadow: 2px 2px #ff66ff;
+    transition: text-shadow 0.2s ease-in-out;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
     font-weight: bolder;
     font-size: 60px;
     margin-top: 10px;
     width: 100%;
+}
+
+#purple h1:hover {
+    text-shadow: 3px 3px 9px #c741c7;
+    animation-iteration-count: 0;
 }
 
 #purple a {
@@ -374,7 +436,7 @@ section {
 
 #section5 {
     background-image: url("../pics/bc/wood.jpg");
-    height: 130vh;
+    height: 138vh;
 }
 
 #bee {
