@@ -73,7 +73,8 @@ html, body {
 }
 
 .navbar {
-    /* opacity: 1; */
+    visibility: visible;
+    opacity: 1;
     background: rgba(0, 0, 0, 0.85);
     -webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;

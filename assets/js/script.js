@@ -48,25 +48,11 @@ $(function() {
 	$(window).scroll(function(){
 		var scrollTop = $(window).scrollTop();
 		if(scrollTop != 0)
-			$('.navbar').stop().animate({'opacity':'0'},0);
+			$('.navbar').css('visibility', 'hidden').animate({opacity: 0}, 0);
 		else	
-			$('.navbar').stop().animate({'opacity':'1'},200);
+			$('.navbar').css('visibility', 'visible').animate({opacity: 1}, 100);
 	});
-	
-	// $('.navbar').hover(
-	// 	function (e) {
-	// 		var scrollTop = $(window).scrollTop();
-	// 		if(scrollTop != 0){
-	// 			$('.navbar').stop().animate({'opacity':'1'},150);
-	// 		}
-	// 	},
-	// 	function (e) {
-	// 		var scrollTop = $(window).scrollTop();
-	// 		if(scrollTop != 0){
-	// 			$('.navbar').stop().animate({'opacity':'0'},150);
-	// 		}
-	// 	}
-	// );
+
 });
 
 // When the user scrolls down 20px from the top of the document, show the button
