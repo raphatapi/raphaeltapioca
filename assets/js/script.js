@@ -46,18 +46,20 @@ $(document).ready(function(){
 
 $(function() {
 	$(window).scroll(function(){
+    //When the user scrolls down, it hides navbar, and scroll up, makes it visible
 		var scrollTop = $(window).scrollTop();
 		if(scrollTop != 0)
 			$('.navbar').css('visibility', 'hidden').animate({opacity: 0}, 0);
 		else	
-			$('.navbar').css('visibility', 'visible').animate({opacity: 1}, 100);
+      $('.navbar').css('visibility', 'visible').animate({opacity: 1}, 100);
+    
+    //Calling function to show up button
+    scrollFunction();
 	});
 
 });
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
     if ($('body').scrollTop > 20 || document.documentElement.scrollTop > 20) {
         $("#myBtn").fadeIn({queue: false, duration: '1s'});
