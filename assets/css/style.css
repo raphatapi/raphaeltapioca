@@ -150,24 +150,24 @@ section {
     color: white;
     font-family: 'Playfair Display', serif;
     text-align: center;
-    font-size: 10vh;
+    font-size: 8vh;
     font-weight: bolder;
 }
 
 #picWrap {
     display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
 	align-items: center;
-    align-content: stretch;
-    margin-top: 9%;
+	align-content: stretch;
+    margin: 9% 0 5% -10%;
 }
 
 #photo {
     /* margin-top: 5%; */
-    height: 52vh;
-    width: 50vh;
+    height: 48vh;
+    width: 45vh;
     border-radius: 50%;
     animation-delay: 1.5s;
     animation-duration: 2s;
